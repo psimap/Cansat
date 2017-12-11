@@ -17,8 +17,6 @@ int Y0,Y1,Y_out;
 int Z1,Z0,Z_out;
 double Xg,Yg,Zg;
 
- 
-
 
 void setup()
 {
@@ -63,6 +61,7 @@ void loop()
     Y1=Y1<<8;
     Y_out=Y0+Y1;
   }
+ 
   //------------------Z
   Wire.beginTransmission(ADXAddress); // transmit to device
   Wire.write(Register_Z0);
